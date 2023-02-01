@@ -1,0 +1,5 @@
+<section class="gallery" [@listAnimation]="randomPhotos.length">
+    <div *ngFor="let image of randomPhotos">
+      <app-card class="gallery-item" [image]="image"></app-card>
+    </div>
+</section>
