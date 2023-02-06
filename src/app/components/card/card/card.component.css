@@ -9,6 +9,10 @@
   border-radius: 10px;
 }
 
+.profile{
+  border-radius: 10px;
+}
+
 .content {
   height: 100%;
   width: 100%;
@@ -54,3 +58,4 @@
   background-color:  rgba(16, 79, 226, 0.106);
   border-color: transparent;
 }
+

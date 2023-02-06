@@ -13,10 +13,7 @@ export class PhotoCollectionService {
   private accessKey : string = environment.ACCES_KEY;
   randomPhotos : imageBulk[] = [];
 
-  constructor(private http : HttpClient) { 
-
-  }
-
+  constructor(private http : HttpClient) {}
 
   getPhotos() {
     return this.http.get<imageBulk[]>(`${this.baseApi}${this.random}&client_id=${this.accessKey}`);

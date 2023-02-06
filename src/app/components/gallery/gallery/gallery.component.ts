@@ -16,16 +16,14 @@ export class GalleryComponent implements OnInit {
   constructor(private PC: PhotoCollectionService) { }
 
   ngOnInit(): void {
-    this.PC.getPhotos().subscribe((data: any) => {
+    this.PC.getPhotos().subscribe((data: imageBulk[]) => {
       this.randomPhotos = data;
-    }
-    );
-    
+    });  
   }
 
   nextPhotos(){
     this.randomPhotos = [];
-    this.PC.getPhotos().subscribe((data: any) => {
+    this.PC.getPhotos().subscribe((data: imageBulk[]) => {
       this.randomPhotos = data;
     }
     );

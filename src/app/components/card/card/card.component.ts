@@ -8,22 +8,14 @@ import { NgbModal } from '@ng-bootstrap/ng-bootstrap';
   templateUrl: './card.component.html',
   styleUrls: ['./card.component.css']
 })
-export class CardComponent implements OnInit {
+export class CardComponent {
 
- @Input() image! : imageBulk;
+  @Input() image!: imageBulk;
 
-  constructor( private modalService: NgbModal) {
-   }
+  constructor(private modalService: NgbModal) { }
 
-  ngOnInit(): void {
-  }
-
-  likeImage(image : string){
-    console.log(image);
-  }
-
-  openModal(content:any) { 
-    this.modalService.open(content, {centered: true})
+  openModal(content: any) {
+    this.modalService.open(content, { size: 'md' });
   }
 
 }

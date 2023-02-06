@@ -1,3 +1,5 @@
+<!-- Individual card img -->
+
 <div class="contain position-relative" (click)="openModal(content)">
 
   <div>
@@ -8,42 +10,40 @@
       <div class="position-absolute bottom-0 
                             d-flex col-12 
                             justify-content-start
-                            align-items-start ms-3">
-
-    <p class="font2">{{image.user.name |titlecase}}</p>
-
-      </div>
+                            align-items-center ms-2 mb-2">
+       
+          <img [src]="image.user.profile_image.small" [alt]="image.user.name" class="profile">
+          <p class="font2 ms-2 my-auto">{{image.user.name |titlecase}}</p>
+     
     </div>
   </div>
 </div>
+    
 
 
 <!-- Modal -->
 
-<ng-template #content let-modal>
+<ng-template #content let-modal class="modal-dialog modal-dialog-centered">
   <div class="modal-header">
 
-    <h4 class="modal-title font1">{{image.user.name}}</h4>
-    <div class="d-flex">
-      
-      <button type="button" 
+    <h4 class="modal-title font1">{{image.user.name}}</h4>  
+    <button type="button" 
               class="btn btnDown" 
-              (click)="modal.close('Close click')">Close</button>
-
-    </div>
-
+              (click)="modal.close('Close click')">X</button>
   </div>
 
   <!-- modal body -->
 
-  <div class="modal-body">
+  <div class="modal-body ">
     <img [src]="image.urls.regular" 
          [alt]="image.alt_description" 
           title="Photo by {{ image.user.name }} on Unsplash"
           class="cardPhoto" />
   </div>
   
-  <div class="modal-footer d-flex justify-content-between">
+    <!-- modal footer -->
+
+  <div class="modal-footer d-flex justify-content-between align-items-center">
 
     <a [href]="image.links.download" target="_blank" type="button" class="btn btnDown">
       <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
@@ -54,8 +54,6 @@
       </svg>
       Download
     </a>
-
-    <!-- modal footer -->
 
     <button type="button" class="btn btnLike">
       <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" class="bi bi-heart-fill icon" viewBox="0 0 16 16">
