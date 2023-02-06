@@ -1,4 +1,4 @@
-import { Component, Input, OnInit } from '@angular/core';
+import { Component, Input } from '@angular/core';
 import { imageBulk } from '../../../shared/models/api-response';
 import { NgbModal } from '@ng-bootstrap/ng-bootstrap';
 

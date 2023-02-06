@@ -100,22 +100,22 @@ export interface imageBulk {
     instagram_username: string  | null
     portfolio_url: string | null
     twitter_username: string | null
-    paypal_email: any
+    paypal_email: string | any
   }
   
   export interface Exif {
-    make: any
-    model: any
-    name: any
-    exposure_time: any
-    aperture: any
-    focal_length: any
+    make: string | any
+    model: string | any
+    name: string | any
+    exposure_time: string | any
+    aperture: string | any
+    focal_length: string | any
     iso: string | any
   }
   
   export interface Location {
     name: string | null
-    city: any
+    city: string | any
     country: string | null
     position: Position
   }
