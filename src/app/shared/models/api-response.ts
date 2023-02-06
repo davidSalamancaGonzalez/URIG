@@ -7,14 +7,14 @@ export interface imageBulk {
     height: number
     color: string
     blur_hash: string
-    description: any
+    description: string | any
     alt_description: string
     urls: Urls
     links: Links
     likes: number
     liked_by_user: boolean
     current_user_collections: any[]
-    sponsorship: any
+    sponsorship: string
     topic_submissions : TopicSubmissions 
     user: User
     exif: Exif
@@ -68,7 +68,7 @@ export interface imageBulk {
     twitter_username: string | null
     portfolio_url: string | null
     bio: string | null
-    location: any
+    location: string | any
     links: Links2
     profile_image: ProfileImage
     instagram_username: string  | null
@@ -110,7 +110,7 @@ export interface imageBulk {
     exposure_time: any
     aperture: any
     focal_length: any
-    iso: any
+    iso: string | any
   }
   
   export interface Location {
