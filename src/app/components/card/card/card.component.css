@@ -1,0 +1,56 @@
+.contain {
+  overflow: hidden;
+  margin-bottom: 1rem;
+}
+
+.cardPhoto {
+  width: 100%;
+  overflow: hidden;
+  border-radius: 10px;
+}
+
+.content {
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  font-size: 1rem;
+  color: #fffcfa;
+  border-radius: 10px;
+  background-color: rgba(200, 200, 200, 0.5);
+  -webkit-transition: all 400ms ease-out;
+  -moz-transition: all 400ms ease-out;
+  -o-transition: all 400ms ease-out;
+  -ms-transition: all 400ms ease-out;
+  transition: all 400ms ease-out;
+}
+
+.content:hover {
+  opacity: 1;
+  cursor: pointer;
+}
+
+.icon {
+  fill: rgba(255, 0, 13, 1);
+}
+
+.btnLike {
+  background-color: rgba(252, 247, 243, 0.5);
+}
+
+.btnLike:active{
+  background-color: rgba(255, 0, 13, 0.3);
+  border-color: transparent;
+}
+
+.btnDown{
+  background-color: rgba(132, 131, 131, 0.1);
+}
+
+.btnDown:hover{
+  background-color: rgba(0, 0, 0, 0.11);
+}
+
+.btnDown:active{
+  background-color:  rgba(16, 79, 226, 0.106);
+  border-color: transparent;
+}

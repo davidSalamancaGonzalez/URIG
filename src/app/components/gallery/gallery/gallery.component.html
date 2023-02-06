@@ -1,5 +1,8 @@
-<section class="gallery" [@listAnimation]="randomPhotos.length">
+<app-header (click)="nextPhotos()"></app-header>
+
+<section class="gallery">
     <div *ngFor="let image of randomPhotos">
-      <app-card class="gallery-item" [image]="image"></app-card>
+      <app-card [image]="image"></app-card>
     </div>
 </section>
+

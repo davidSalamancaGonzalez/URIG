@@ -9,6 +9,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { CardComponent } from './components/card/card/card.component';
 import { GalleryComponent } from './components/gallery/gallery/gallery.component';
 import { SharedModule } from './shared/shared.module';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
 
 @NgModule({
@@ -22,6 +23,7 @@ import { SharedModule } from './shared/shared.module';
     BrowserModule,
     HttpClientModule,
     SharedModule,
+    NgbModule,
   ],
   bootstrap: [AppComponent]
 })

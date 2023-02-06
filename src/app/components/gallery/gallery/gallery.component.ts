@@ -1,6 +1,8 @@
 
 import { Component, OnInit } from '@angular/core';
 import { PhotoCollectionService } from '../../../services/photo-collection.service';
+import { imageBulk } from '../../../shared/models/api-response';
+
 
 @Component({
   selector: 'app-gallery',
@@ -9,17 +11,23 @@ import { PhotoCollectionService } from '../../../services/photo-collection.servi
 })
 export class GalleryComponent implements OnInit {
 
-  randomPhotos: any[] = [];
+  randomPhotos: imageBulk[] = [];
 
   constructor(private PC: PhotoCollectionService) { }
 
   ngOnInit(): void {
     this.PC.getPhotos().subscribe((data: any) => {
-      console.log(data);
       this.randomPhotos = data;
     }
     );
-
+    
   }
 
+  nextPhotos(){
+    this.randomPhotos = [];
+    this.PC.getPhotos().subscribe((data: any) => {
+      this.randomPhotos = data;
+    }
+    );
+  }
 }

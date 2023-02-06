@@ -1,4 +1,7 @@
 import { Component, Input, OnInit } from '@angular/core';
+import { imageBulk } from '../../../shared/models/api-response';
+import { NgbModal } from '@ng-bootstrap/ng-bootstrap';
+
 
 @Component({
   selector: 'app-card',
@@ -7,11 +10,20 @@ import { Component, Input, OnInit } from '@angular/core';
 })
 export class CardComponent implements OnInit {
 
- @Input() image : any = [];
+ @Input() image! : imageBulk;
 
-  constructor() { }
+  constructor( private modalService: NgbModal) {
+   }
 
   ngOnInit(): void {
+  }
+
+  likeImage(image : string){
+    console.log(image);
+  }
+
+  openModal(content:any) { 
+    this.modalService.open(content, {centered: true})
   }
 
 }
