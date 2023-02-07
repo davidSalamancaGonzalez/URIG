@@ -9,6 +9,11 @@
   border-radius: 10px;
 }
 
+.contain:hover{
+  transform: scale(1.015);
+  transition: transform 0.5s ease-in-out;
+}
+
 .description{
   font-size: 0.8rem;
 }
