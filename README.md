@@ -12,7 +12,7 @@ When clicking on any image, a dialog window appears with the photograph and seve
 - Give a like
 
 You can see it at the following link:
-[URIG](https://incandescent-fairy-252f8e.netlify.app/)
+[URIG](https://63e22f6318a2ff4b83301216--lustrous-lokum-9c7268.netlify.app/)
 
 
 ## Structure
