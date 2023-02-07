@@ -12,7 +12,7 @@ When clicking on any image, a dialog window appears with the photograph and seve
 - Give a like
 
 You can see it at the following link:
-<a href="https:://shorturl.at/akr67" target="_blank">URIG</a>
+https:://shorturl.at/akr67
 
 
 ## Structure
