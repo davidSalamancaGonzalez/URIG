@@ -3,12 +3,13 @@
 
 button {
   font-family: 'Montserrat', sans-serif;
-  font-size: 20px;
+  font-size: 1.5rem;
   background: rgb(255, 255, 255);
   color: rgb(0, 0, 0);
   padding: 0.7em;
   display: flex;
   align-items: center;
+  justify-content: space-between;
   border: 2px solid black;
   border-radius: 16px;
   overflow: hidden;
@@ -16,13 +17,7 @@ button {
 }
 
 button span {
-
-  display: flex;
-  justify-content: center;
-  align-self: center;
-  align-items: center;
-  /* margin-left: -10px; */
-  /* margin: 0 auto; */
+  display: block;
   transition: all 0.3s ease-in-out;
 }
 
@@ -37,11 +32,11 @@ button:hover .svg-wrapper {
 }
 
 button:hover svg {
-  transform: translateX(2vw) rotate(45deg) scale(1.1);
+  transform: translateX(-2vw) rotate(45deg) scale(1.1);
 }
 
 button:hover span {
-  transform: scale(1.1);
+  transform: translateX(2vw) scale(1.1);
 }
 
 button:active {
